@@ -2,7 +2,7 @@ _core:
   default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
 langcode: en
 uuid: 6f65cb0c-ef02-41d1-9dca-3746cc1d925f
-name: HEC
+name: 'HEC Training'
 mail: dharizza@example.com
 slogan: ''
 page:
