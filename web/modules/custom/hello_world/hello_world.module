@@ -4,3 +4,20 @@
  * @file
  * Primary module hooks for Hello World module.
  */
+
+use \Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_alter().
+ *
+ * Target forms to have the promotion options details component
+ * open by default.
+ */
+function hello_world_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Add logic.
+  // ksm('id', $form_id);
+  // ksm('form', $form);
+  if ($form_id == 'node_article_add') {
+    $form['options']['#open'] = TRUE;
+  }
+}
