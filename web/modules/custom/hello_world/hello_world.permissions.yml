@@ -1,0 +1,4 @@
+add tags to articles:
+  title: 'Add tags to articles'
+  description: 'Optional description of my permission'
+  restrict access: true
