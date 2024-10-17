@@ -44,23 +44,28 @@ final class DownloadFilesForm extends FormBase {
   }
 
   private function getMediaOptions() {
+    $config = \Drupal::config('download_files.settings');
+    $types = $config->get('media_types');
+
     /*
     // Example using database abstraction layer.
     $query_results = \Drupal::database()
       ->select('media_field_data', 'm')
-      ->fields('m', ['mid', 'name'])
+      ->fields('m', ['mid', 'bundle', 'name'])
+      ->condition('bundle', $types, 'IN')
       ->execute()
       ->fetchAll();
 
     $files = [];
     foreach ($query_results as $file) {
-      $files[$file->mid] = $file->name;
+      $files[$file->mid] = $file->bundle . ' --- ' . $file->name;
     }
     */
 
     // Example using entity queries.
     $query = \Drupal::entityQuery('media')
       ->condition('status', 1)
+      ->condition('bundle', $types, 'IN')
       ->accessCheck();
     $ids = $query->execute();
 
