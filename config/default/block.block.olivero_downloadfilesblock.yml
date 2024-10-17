@@ -1,0 +1,20 @@
+uuid: b8679e5d-f13f-48fe-8e6e-ad0f518a80bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - download_files
+  theme:
+    - olivero
+id: olivero_downloadfilesblock
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: download_files_block
+settings:
+  id: download_files_block
+  label: 'Download Files'
+  label_display: visible
+  provider: download_files
+visibility: {  }
