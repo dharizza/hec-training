@@ -1,0 +1,4 @@
+media_types:
+  image: image
+  document: document
+  remote_video: 0
