@@ -1,0 +1,37 @@
+name: hec
+type: theme
+'base theme': olivero
+version: 1.0.0
+libraries:
+  - hec/base
+  - hec/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - hec/user
+  core/drupal.dropbutton:
+    - hec/dropbutton
+  core/drupal.dialog:
+    - hec/dialog
+  file/drupal.file:
+    - hec/file
+  core/drupal.progress:
+    - hec/progress
+description: ''
+core_version_requirement: ^11
+generator: 'starterkit_theme:11.0.4'
+
+regions:
+  header: Header
+  primary_menu: Primary menu
+  secondary_menu: Secondary menu
+  hero: Hero (full width)
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  social: Social Bar
+  content_above: Content Above
+  content: Content
+  sidebar: Sidebar
+  content_below: Content Below
+  footer_top: Footer Top
+  footer_bottom: Footer Bottom
