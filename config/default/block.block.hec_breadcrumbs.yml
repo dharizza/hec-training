@@ -1,0 +1,22 @@
+uuid: c2f8b9fa-5cad-40ac-ad15-19b9067716cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hec
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: hec_breadcrumbs
+theme: hec
+region: breadcrumb
+weight: -8
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

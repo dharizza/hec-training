@@ -1,0 +1,22 @@
+uuid: 863c2596-c3ac-4655-b63e-3c55676f8fc7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hec
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: hec_content
+theme: hec
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

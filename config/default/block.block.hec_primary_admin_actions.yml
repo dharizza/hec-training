@@ -1,0 +1,20 @@
+uuid: 5390a7dd-0c78-4dac-a4f7-8eae334bf9ea
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hec
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: hec_primary_admin_actions
+theme: hec
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

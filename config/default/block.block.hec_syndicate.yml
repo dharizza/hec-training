@@ -1,0 +1,23 @@
+uuid: cb89a4b1-bee6-4e6f-9582-d9af327d1808
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+  theme:
+    - hec
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: hec_syndicate
+theme: hec
+region: header
+weight: -4
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }
