@@ -1,0 +1,35 @@
+'$schema': 'https://git.drupalcode.org/project/drupal/-/raw/10.1.x/core/modules/sdc/src/metadata.schema.json'
+name: Card
+status: stable
+description: Card component
+props:
+  type: object
+  properties:
+    attributes:
+      type: Drupal\Core\Template\Attribute
+      title: Attributes
+      description: Wrapper attributes.
+    card_title:
+      type: string
+      title: Title
+      description: The title of the card.
+      examples:
+        - Awesome Card
+    description:
+      type: string
+      title: Description
+      description: The text of the card.
+      examples:
+        - Quisque id odio. In hac habitasse platea dictumst. Praesent venenatis metus at tortor pulvinar varius. Aliquam eu nunc. Nullam vel sem. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Quisque libero metus, condimentum nec, tempor a, commodo mollis, magna. Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Praesent nec nisl a purus blandit viverra.
+    image:
+      type: string
+      title: Image
+      description: The image of the card.
+      examples:
+        - <img src="thumbnail.jpg">
+    footer:
+      type: string
+      title: Footer
+      description: The footer section of the card.
+      examples:
+        - Hello

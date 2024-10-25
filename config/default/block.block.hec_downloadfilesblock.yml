@@ -1,0 +1,20 @@
+uuid: d940bde6-f543-496a-a547-7eb6bc7bf4bf
+langcode: en
+status: false
+dependencies:
+  module:
+    - download_files
+  theme:
+    - hec
+id: hec_downloadfilesblock
+theme: hec
+region: header
+weight: -7
+provider: null
+plugin: download_files_block
+settings:
+  id: download_files_block
+  label: 'Download Files'
+  label_display: visible
+  provider: download_files
+visibility: {  }

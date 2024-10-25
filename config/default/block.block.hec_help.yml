@@ -1,0 +1,22 @@
+uuid: ec1d11c7-1542-46b0-8873-7f2b885a687d
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - hec
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: hec_help
+theme: hec
+region: header
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

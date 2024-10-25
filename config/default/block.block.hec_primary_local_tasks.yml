@@ -1,0 +1,22 @@
+uuid: d28f24f8-f90c-49f1-9c3e-b8410fe6d15b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hec
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: hec_primary_local_tasks
+theme: hec
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }
