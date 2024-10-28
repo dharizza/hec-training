@@ -1,5 +1,9 @@
 {% set classes = [
   'card',
+  'bg-green-100',
+  'text-xl',
+  'p-4',
+  'font-rubik-wet',
 ] %}
 
 <div {{ attributes.addClass(classes) }}>
@@ -12,7 +16,7 @@
 
   <div class="card__body">
     {% if card_title %}
-      <h2>{{ card_title }}</h2>
+      <h2 class="text-2xl">{{ card_title }}</h2>
     {% endif %}
     {% if description %}
       {{ description }}

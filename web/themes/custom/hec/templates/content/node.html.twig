@@ -83,9 +83,9 @@
   {{ title_suffix }}
 
   {% set timestamp = node.getCreatedTime() %}
-  {{ kint(timestamp) }}
+  {# {{ kint(timestamp) }} #}
   {% set new_date = timestamp|format_date('long') %}
-  {{ kint(new_date) }}
+  {# {{ kint(new_date) }} #}
 
   {% if display_submitted %}
     <footer class="node__meta">
@@ -97,7 +97,7 @@
     </footer>
   {% endif %}
 
-  {{ kint() }}
+  {# {{ kint() }} #}
   <div{{ content_attributes.addClass('node__content') }}>
     {{ content|without('comment') }}
   </div>

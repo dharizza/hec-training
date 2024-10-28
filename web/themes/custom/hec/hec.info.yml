@@ -3,9 +3,11 @@ type: theme
 'base theme': olivero
 version: 1.0.0
 libraries:
+  - hec/tailwindcss
   - hec/base
   - hec/messages
   - core/normalize
+  - hec/google_fonts
 libraries-extend:
   user/drupal.user:
     - hec/user
