@@ -1,0 +1,11 @@
+uuid: 1d0036bb-4f83-4c17-a22a-afc21dbce17b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.rounded_image
+label: 'Rounded Image'
+description: ''
+targetEntityType: media
+cache: true

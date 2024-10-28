@@ -8,6 +8,7 @@ dependencies:
     - media.type.image
   module:
     - image
+    - nomarkup
 id: media.image.default
 targetEntityType: media
 bundle: image
@@ -21,7 +22,11 @@ content:
       image_style: large
       image_loading:
         attribute: lazy
-    third_party_settings: {  }
+    third_party_settings:
+      nomarkup:
+        enabled: true
+        separator: '|'
+        referenced_entity: ''
     weight: 0
     region: content
 hidden:
