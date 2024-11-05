@@ -33,3 +33,7 @@ props:
       description: The footer section of the card.
       examples:
         - Hello
+    reverse:
+      type: string
+      title: Reverse display
+      description: For placing the image on the right
