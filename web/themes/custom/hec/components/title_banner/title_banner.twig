@@ -1,0 +1,14 @@
+{% set classes = [
+  'title-banner',
+  'bg-teal-800',
+  'p-5',
+  'text-white',
+  'rounded-br-3xl',
+] %}
+
+<div {{ attributes.addClass(classes) }}>
+  {% if eyebrow %}
+    <small class="block uppercase mb-5">{{ eyebrow }}</small>
+  {% endif %}
+  <h1 class="text-white text-6xl">{{ title }}</h1>
+</div>

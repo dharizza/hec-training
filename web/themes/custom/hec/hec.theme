@@ -19,3 +19,29 @@ function hec_preprocess_image_widget(array &$variables) {
     unset($data['preview']);
   }
 }
+
+/**
+ * Implement hook_preprocess_page_title.
+ *
+ * This description can be longer and take multiple lines.
+ */
+function hec_preprocess_page_title(&$variables) {
+  if (($node = \Drupal::routeMatch()->getParameter('node')) || ($node = \Drupal::routeMatch()->getParameter('node_preview'))) {
+    $variables['node_type'] = $node->getType();
+  }
+}
+
+function hec_theme_suggestions_page_title_alter(array &$suggestions, array &$variables) {
+  if ($node = Drupal::routeMatch()->getParameter('node')) {
+    $suggestions[] = 'page_title__node';
+    $suggestions[] = 'page_title__node__' . $node->getType();
+  }
+}
+
+function hec_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  ksm($form);
+  $form['test'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Show menu'),
+  ];
+}
